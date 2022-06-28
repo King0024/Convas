@@ -18,8 +18,6 @@ function loadVertexAndFragmentShader(gl, vertexShaderId, fragmentShaderId) {
   return shaderProgram;
 }
 
-
-
 // Get A WebGL context
 const canvas = document.getElementById('gl-canvas');
 const gl =
@@ -39,7 +37,6 @@ const vertexPositionAttribute = gl.getAttribLocation(
   'a_position'
 );
 
-//////// 🟢 CODE FOR CREATING A CIRCLE 🟢 ////////////
 const n = 100;
 const rad = 0.75;
 const array = [];
@@ -51,8 +48,6 @@ for (let i = 0.0; i <= 360 + steps; i += steps) {
   array.push(Math.sin(j) * rad);
   array.push(Math.cos(j) * rad);
 }
-
-////////////////////////////////////////////////////////
 
 // Create a buffer for a simple triangle
 const buffer = gl.createBuffer();
