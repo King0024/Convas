@@ -35,7 +35,6 @@ const vertexPositionAttribute = gl.getAttribLocation(
   shaderProgram,
   'a_position'
 );
-
 const n = 100;
 const rad = 0.75;
 const array = [];
