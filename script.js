@@ -17,7 +17,6 @@ function loadVertexAndFragmentShader(gl, vertexShaderId, fragmentShaderId) {
 
   return shaderProgram;
 }
-
 // Get A WebGL context
 const canvas = document.getElementById('gl-canvas');
 const gl =
@@ -48,7 +47,6 @@ for (let i = 0.0; i <= 360 + steps; i += steps) {
   array.push(Math.sin(j) * rad);
   array.push(Math.cos(j) * rad);
 }
-
 // Create a buffer for a simple triangle
 const buffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
